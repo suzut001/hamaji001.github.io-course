@@ -1,0 +1,16 @@
+title: hamaji001.github.io
+description: testpage
+template:
+  repo: hamaji001.github.io-template
+  name: hamaji001.github.io
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
